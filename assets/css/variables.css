@@ -1,0 +1,11 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+    --txt-color: #E1E1E6;
+    --txt-placeholder: #7C7C8A;
+    --bg-color: #000;
+    --bg-input: #06181C;
+    --bg-btn: #065E7C;
+    --bg-thead: #092D38;
+    --ol-table: rgb(28, 130, 161);
+}

@@ -1,0 +1,155 @@
+body * {
+    font-family: var(--ff-primary);
+}
+
+body,
+button {
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    max-width: 112rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    border: none;
+    border-radius: .5rem;
+    padding: 1.6rem;
+    background-color: var(--bg-input);
+    color: var(--txt-color);
+}
+
+.search input::placeholder {
+    color: var(--txt-placeholder);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    background-color: var(--bg-btn);
+    border-radius: .5rem;
+    height: 4.8rem;
+    border: none;
+    padding: 1.2rem 3.2rem;
+    cursor: pointer;
+
+    color: var(--txt-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+
+.search button:hover {
+    filter: brightness(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    outline: 1px solid var(--ol-table);
+    border-radius: .5rem .5rem 0 0;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--txt-color);
+}
+
+table th {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 160%;
+
+    background: var(--bg-thead);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.6rem 4rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #06161B80;
+}
+
+table tr:nth-child(odd) {
+    background-color: #06181C;
+}
+
+table td {
+    padding: 1.6rem 4rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a p,
+td.repositories p,
+td.followers p {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+td.user a span {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+td .remove {
+    color: #F75A68;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 160%;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
